@@ -1,0 +1,54 @@
+header.c-header.c-header_open
+    .container
+        .c-header__body
+            .c-header__header
+                .c-header__toggle.c-header__toggle_close.d-lg-none
+                    +svgSprite({width: 24, height: 24, name: "header-close", className: ".c-header__icon"})
+                .c-header__toggle.c-header__toggle_open.d-lg-none
+                    +svgSprite({width: 24, height: 24, name: "header-open", className: ".c-header__icon"})
+                .c-header__logo-wrap.d-lg-none
+                    img(src="images/logo-mobile.png")
+                .c-header__logo-wrap.d-none.d-lg-block
+                    img(src="images/logo-desktop.png")
+            nav.c-header__nav.c-menu-list
+                .c-menu-list__item
+                    a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") каталог услуг
+                        .c-btn__icon-wrap
+                            +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"})
+                .c-menu-list__item
+                    a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") Каталог продукции
+                        .c-btn__icon-wrap
+                            +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"})
+                .c-menu-list__item
+                    a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") О компании
+                        .c-btn__icon-wrap
+                            +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"})
+                    .c-menu-item__list
+                        .c-menu-item__item
+                            a.c-btn.c-btn_link.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_md(href="#")
+                                .c-btn__icon-wrap
+                                    +svgSprite({width: 7, height: 7, name: "quotes2", className: "c-btn__icon"})
+                                | О нас
+                        .c-menu-item__item
+                            a.c-btn.c-btn_link.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_md(href="#")
+                                .c-btn__icon-wrap
+                                    +svgSprite({width: 7, height: 7, name: "quotes2", className: "c-btn__icon"})
+                                | Сертификаты и лицензии
+                        .c-menu-item__item
+                            a.c-btn.c-btn_link.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_md(href="#")
+                                .c-btn__icon-wrap
+                                    +svgSprite({width: 7, height: 7, name: "quotes2", className: "c-btn__icon"})
+                                | Сотрудники
+                        .c-menu-item__item
+                            a.c-btn.c-btn_link.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_md(href="#")
+                                .c-btn__icon-wrap
+                                    +svgSprite({width: 7, height: 7, name: "quotes2", className: "c-btn__icon"})
+                                | Реквизиты
+                .c-menu-list__item
+                    a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") Наши проекты
+                        .c-btn__icon-wrap
+                            +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"})
+                .c-menu-list__item
+                    a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") Блог
+                        .c-btn__icon-wrap
+                            +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"}) Контакты

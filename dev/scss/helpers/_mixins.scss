@@ -1,0 +1,26 @@
+@import "mixins/font-face";
+
+@mixin text-max-height($font-size, $line-height,$lines) {
+  max-height: ((($line-height/$font-size)*$lines) em);
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin hide-scrollbar {
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+  }
+}
+
+@mixin border-shadow ($width, $color: #000) {
+  box-shadow: inset -#{$width} 0 0 0 $color, inset 0 -#{$width} 0 0 $color, -#{$width} -#{$width} 0 0 $color, -#{$width} 0 0 0 $color, 0 -#{$width} 0 0 $color;
+}

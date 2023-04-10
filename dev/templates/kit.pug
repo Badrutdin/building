@@ -1,0 +1,153 @@
+extends ../pug/layout
+append content
+    .c-section
+        .container
+            .c-section__head
+                .c-title услуги
+                | Предлагаем ваш широкий спектр услуг в сфере строительства, в том числе в условиях крайнего севера
+    .container
+        .row
+            button.c-btn.c-btn_md.c-btn_default.c-btn_primary подробнее
+            button.c-btn.c-btn_md.c-btn_ghost.c-btn_primary подробнее
+            button.c-btn.c-btn_md.c-btn_ghost.c-btn_secondary подробнее
+            button.c-btn.c-btn_md.c-btn_default.c-btn_primary.c-btn_ico
+                +svgSprite({width: 11, height: 18, name: "prew-arrow", className: "c-btn__icon"})
+            button.c-btn.c-btn_md.c-btn_default.c-btn_secondary.c-btn_ico
+                +svgSprite({width: 11, height: 18, name: "prew-arrow", className: "c-btn__icon"})
+            button.c-btn.c-btn_md.c-btn_transparent.c-btn_primary.c-btn_ico
+                +svgSprite({width: 11, height: 18, name: "prew-arrow", className: "c-btn__icon"})
+            button.c-btn.c-btn_md.c-btn_transparent.c-btn_secondary.c-btn_ico
+                +svgSprite({width: 20, height: 20, name: "magnify", className: "c-btn__icon"})
+            button.c-btn.c-btn_md.c-btn_transparent.c-btn_tertiary.c-btn_ico
+                +svgSprite({width: 50, height: 50, name: "magnify2", className: "c-btn__icon"})
+            button.c-btn.c-btn_sm.c-btn_default.c-btn_secondary.c-btn_ico 9
+            button.c-btn.c-btn_sm.c-btn_default.c-btn_primary.c-btn_ico 99
+            button.c-btn.c-btn_sm.c-btn_transparent.c-btn_primary.c-btn_ico 999
+            a.c-btn.c-btn_inlay все
+            a.c-btn.c-btn_inlay.c-btn_inlay_active все
+            a.c-btn.c-btn_sm.c-btn_link.c-btn_primary(href="#") 999
+            a.c-btn.c-btn_link.c-btn_secondary(href="#") 999
+            a.c-btn.c-btn_link.c-btn_lg.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_lg(href="#")
+                .c-btn__icon-wrap
+                    +svgSprite({width: 13, height: 15, name: "quotes", className: "c-btn__icon"})
+                | ПОДРОБНЕЕ
+            a.c-btn.c-btn_icon-before.c-btn_icon-before_lg.c-btn_icon-before_doc(href="#")
+                .c-btn__icon-wrap
+                    +svgSprite({width: 21, height: 21, name: "document", className: "c-btn__icon"})
+                .c-document-item
+                    .c-document-item__title Название какого-то очень важного документа документа
+                    .c-document-item__props doc 870 Кб
+            a.c-btn.c-btn_link.c-btn_secondary.c-btn_icon-before.c-btn_icon-before_lg(href="#")
+                .c-btn__icon-wrap
+                    +svgSprite({width: 7, height: 7, name: "quotes2", className: "c-btn__icon"})
+                | О компании
+            a.c-phone.c-phone_primary(href="tel:++781242601046")
+                +svgSprite({width: 18, height: 18, name: "phone", className: "c-phone__icon"})
+                .c-phone__body
+                    .c-phone__title Главный офис
+                    .c-phone__phone +7 (812) 4260-1046
+            a.c-phone.c-phone_secondary(href="tel:++781242601046")
+                +svgSprite({width: 18, height: 18, name: "phone", className: "c-phone__icon"})
+                .c-phone__body
+                    .c-phone__title Главный офис
+                    .c-phone__phone +7 (812) 4260-1046
+            .c-teaser-item
+                .c-teaser-item__title 1 504
+                .c-teaser-item__text числовой показатель какого-то преимущества
+            a.c-menu-item.c-btn.c-btn_icon-after.c-btn_icon-after_md(href="#") О компании
+                .c-btn__icon-wrap
+                    +svgSprite({width: 8, height: 8, name: "arrow", className: "c-btn__icon"})
+        .c-input-wrap
+            input.c-input.c-input_md.c-input_primary(type="text",placeholder="Поиск")
+            .c-input-wrap__error
+                .c-input-error
+                    +svgSprite({width: 24, height: 24, name: "error", className: "c-input-error__icon"})
+                    | поле не заполнено
+        .c-input-wrap
+            input.c-input.c-input_md.c-input_primary.c-input_invalid(type="text",placeholder="Поиск")
+            .c-input-wrap__error
+                .c-input-error
+                    +svgSprite({width: 24, height: 24, name: "error", className: "c-input-error__icon"})
+                    | поле не заполнено
+        .row
+            .col-3
+                a.c-feedback-card.c-feedback-card_events(href="#")
+                    .c-feedback-card__image
+                    .c-feedback-card__caption Компания «Строим вместе»
+            .col-3
+                .c-worker-card.c-worker-card_sm
+                    .c-worker-card__image
+                    .c-worker-card__caption Фамилия Имя Отчество
+            .col-3
+                .c-worker-card.c-worker-card_md
+                    .c-worker-card__image
+                    .c-worker-card__caption Иванов Сергей Иванович
+
+            .col-3
+                a.c-cert-card.c-cert-card_events(href="#")
+                    .c-cert-card__image(style='background-image:url("images/cert.jpg")')
+                    .c-cert-card__caption Сертификат соответствия строительных работ
+        .row
+            .col-12.col-lg-6
+                a.c-tech-card.c-tech-card_lg(href="#",style='background-image:url("images/tech1.jpg")')
+                    .c-tech-card__body
+                        .c-tech-card__title Название главной технологии, используемой компанией
+                        .c-tech-card__text
+                            | Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.
+                            br
+                            br
+                            | Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.
+            .col-12.col-lg-6
+                a.c-tech-card.c-tech-card_md(href="#",style='background-image:url("images/tech1.jpg")')
+                    .c-tech-card__body
+                        .c-tech-card__title Название главной технологии, используемой компанией
+                        .c-tech-card__text
+                            | Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.
+                            br
+                            br
+                            | Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.
+            .col-12.col-lg-6
+                a.c-tech-card.c-tech-card_sm(href="#",style='background-image:url("images/tech2.jpg")')
+                    .c-tech-card__body
+                        .c-tech-card__title Название главной технологии, используемой компанией
+                        .c-tech-card__text
+                            | Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.
+        .row
+            .col-12.col-md-4
+                a.c-service-card
+                    img.c-service-card__image(src='images/service1.jpg')
+                    .c-service-card__body
+                        .c-service-card__title Технический заказчик генерального подрядчика
+                        .c-service-card__desc Небольшое описание услуги в несколько строчек. Интересный текст об услуге и почему вам стоит обратиться именно в нашу компанию. Небольшое описание проекта в несколько строчек.
+                        .c-service-card__action
+                            .c-btn.c-btn_lg ПОДРОБНЕЕ
+            .col-12
+                .c-news-card
+                    img.c-news-card__image(src='images/news1.jpg')
+                    .c-news-card__body
+                        .c-news-card__date 1 сентября 2021
+                        .c-news-card__title Новый объект: спортивный комплекс в Ленинградской области
+                        .c-news-card__desc Небольшое описание новости в несколько строчек. Текст о новости и ее ключевых особенностях. Небольшое описание новости в несколько строчек. Текст о новости и ее ключевых особенностях.
+                        .c-news-card__action
+                            a.c-btn.c-btn_sm.c-btn_link.c-btn_primary(href="#") Наши проекты
+        .row
+            .col-12.col-md-4
+                a.c-project-card
+                    img.c-project-card__image(src='images/project1.jpg')
+                    .c-project-card__body
+                        .c-project-card__title Многофункциональный спортивный комплекс
+                        .c-project-card__desc Небольшое описание проекта в несколько строчек. Интересный текст об услуге и почему вам стоит обратиться именно в нашу компанию.
+                            br
+                            br
+                            | Небольшое описание проекта в несколько строчек. Небольшое описание проекта в несколько строчек.
+                        .c-project-card__action
+                            .c-btn.c-btn_lg Норильск, Россия
+        .c-img-text
+            .c-img-text__img-wrap
+                .c-img-text__img
+                    +svgSprite({width: 102, height: 102, name: "compass", className: "c-btn__icon"})
+            .c-img-text__text Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще. Произвольный текст на странице компании о компании или о чем-то еще.
+        a.c-product-card(href="#")
+            .c-product-card__img(style='background-image:url("images/product.jpg")')
+            .c-product-card__title Название одного из товаров
+        h2.c-title 123123

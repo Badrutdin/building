@@ -1,0 +1,151 @@
+extends ../pug/layout
+append content
+    .c-section.c-section_main-banner(style='background-image:url("images/main-banner.jpg")')
+        .container
+            .c-banner-slide__list
+                .c-banner-slide-list__item
+                    .c-banner-slide
+                        .c-banner-slide__body
+                            h1.c-main-title
+                                span.c-main-title__accent стройка
+                                br
+                                | в труднодоступных местах
+                        .c-banner-slide__footer
+                            button.c-btn.c-btn_md.c-btn_ghost.c-btn_secondary подробнее
+            .row.c-advantages-list
+                .col-12.col-lg-3.c-advantages-list__item
+                    +advantageItem({
+                        title: 'Мобильность',
+                        desc: 'Строим жилые и промышленные объекты по всему миру',
+                        svg: {width: 62, height: 62, name: "advantage1", className: ".c-advantages-item__icon"}
+                    })
+                .col-12.col-lg-3.c-advantages-list__item
+                    +advantageItem({
+                        title: 'Полный комплекс услуг',
+                        desc: 'И это одно из наших главных преимуществ',
+                        svg: {width: 62, height: 62, name: "advantage2", className: ".c-advantages-item__icon"}
+                    })
+                .col-12.col-lg-3.c-advantages-list__item
+                    +advantageItem({
+                        title: 'Парк спецтехники',
+                        desc: 'В нашем парке новейшие транспорт под любые задачи',
+                        svg: {width: 62, height: 62, name: "advantage3", className: ".c-advantages-item__icon"}
+                    })
+                .col-12.col-lg-3.c-advantages-list__item
+                    +advantageItem({
+                        title: 'Работаем в районах крайнего Севера',
+                        desc: 'И это одно из наших главных преимуществ',
+                        svg: {width: 62, height: 62, name: "advantage4", className: ".c-advantages-item__icon"}
+                    })
+    .c-section
+        .c-decor-bg.c-decor-bg_secondary.c-decor-bg_lg.c-decor-bg_bottom
+        .container
+            .c-section__header
+                .c-title услуги
+                | Предлагаем ваш широкий спектр услуг в сфере строительства, в том числе в условиях крайнего севера
+            .row
+                .col-12.col-md-4
+                    +serviceCard({
+                        href: '#',
+                        img: 'images/service1.jpg',
+                        title: 'Технический заказчик генерального подрядчика',
+                        desc: 'Небольшое описание услуги в несколько строчек. Интересный текст об услуге и почему вам стоит обратиться именно в нашу компанию. Небольшое описание проекта в несколько строчек.',
+                        svg: {width: 13, height: 15, name: "quotes", className: "c-btn__icon"},
+                        btnText: 'ПОДРОБНЕЕ'
+                    })
+                .col-12.col-md-4
+                    +serviceCard({
+                        href: '#',
+                        img: 'images/service2.jpg',
+                        title: 'Строительство',
+                        desc: 'Небольшое описание услуги в несколько строчек. Интересный текст об услуге и почему вам стоит обратиться именно в нашу компанию. Небольшое описание проекта в несколько строчек.',
+                        svg: {width: 13, height: 15, name: "quotes", className: "c-btn__icon"},
+                        btnText: 'ПОДРОБНЕЕ'
+                    })
+                .col-12.col-md-4
+                    +serviceCard({
+                        href: '#',
+                        img: 'images/service3.jpg',
+                        title: 'Проектирование',
+                        desc: 'Небольшое описание услуги в несколько строчек. Интересный текст об услуге и почему вам стоит обратиться именно в нашу компанию. Небольшое описание проекта в несколько строчек.',
+                        svg: {width: 13, height: 15, name: "quotes", className: "c-btn__icon"},
+                        btnText: 'ПОДРОБНЕЕ'
+                    })
+    .c-section
+        .container
+            .c-section__header
+                .c-title технологии
+                | В своей работе мы используем только лучшее и современное оборудование
+            .row
+                .col-12.col-lg-7
+                    +techCard({
+                        href: '#',
+                        img: 'images/tech1.jpg',
+                        title: 'Название главной технологии, используемой компанией',
+                        text: 'Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.',
+                    })
+                .col-12.col-lg-5
+                    +techCard({
+                        href: '#',
+                        img: 'images/tech2.jpg',
+                        title: 'Название главной технологии, используемой компанией',
+                        text: 'Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.',
+                    })
+                .col-12.col-lg-7
+                .col-12.col-lg-5
+                    +techCard({
+                        href: '#',
+                        img: 'images/tech3.jpg',
+                        title: 'Название главной технологии, используемой компанией',
+                        text: 'Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.Небольшое описание технологии. В своей работе мы используем только современное оборудование. В своей работе мы используем только лучшее оборудование.  В своей работе мы используем только современное оборудование.',
+                    })
+    .c-section
+        .container
+            .c-section__header
+                .c-title проекты
+                .row.c-inlay-list
+                    .col-auto.c-inlay-list__item
+                        a.c-btn.c-btn_inlay.c-btn_inlay_active все
+                    .col-auto.c-inlay-list__item
+                        a.c-btn.c-btn_inlay образовательные учреждения
+                    .col-auto.c-inlay-list__item
+                        a.c-btn.c-btn_inlay офисы
+                    .col-auto.c-inlay-list__item
+                        a.c-btn.c-btn_inlay ангары
+            .row
+                .col-12.col-md-4
+                    +projectCard({
+                        href: '#',
+                        img: 'images/project1.jpg',
+                        title: 'Многофункциональный спортивный комплекс',
+                        btnText: 'Норильск, Россия',
+                    })
+                .col-12.col-md-4
+                    +projectCard({
+                        href: '#',
+                        img: 'images/project2.jpg',
+                        title: 'Торговый центр',
+                        btnText: 'Челябинск, Россия',
+                    })
+                .col-12.col-md-4
+                    +projectCard({
+                        href: '#',
+                        img: 'images/project3.jpg',
+                        title: 'Образовательное учреждение',
+                        btnText: 'Москва, Россия',
+                    })
+
+    .c-section.c-section_company(style='background-image:url("images/company-bg.png")')
+        .container
+            .c-section__header
+                .c-title о компании
+                | Работаем для вас уже более 10 лет
+            .row.flex-row-reverse
+                .col-12.col-lg-8
+                    .c-text-card Небольшое описание компании в несколько строчек текста.  Описание компании в несколько строчек текста. Небольшое описание компании в несколько строчек текста. Небольшое описание компании в несколько строчек текста.
+                        br
+                        br
+                        | Небольшое описание компании в несколько строчек текста. Описание компании в несколько строчек текста.
+                        br
+                        br
+                        | Небольшое описание компании в несколько строчек текста. Небольшое описание компании в несколько строчек текста. О компании в несколько строчек текста. Небольшое описание компании в несколько строчек текста.
